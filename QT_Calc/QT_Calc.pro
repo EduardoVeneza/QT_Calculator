@@ -10,10 +10,12 @@ CONFIG += c++11
 
 SOURCES += \
     main.cpp \
-    calculator_interface.cpp
+    calculator_interface.cpp \
+    operations.cpp
 
 HEADERS += \
-    calculator_interface.h
+    calculator_interface.h \
+    operations.h
 
 FORMS += \
     calculator_interface.ui

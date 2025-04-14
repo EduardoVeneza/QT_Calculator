@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>515</width>
-    <height>582</height>
+    <width>785</width>
+    <height>589</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -234,17 +234,28 @@ border-color: rgb(224, 27, 36);</string>
      <rect>
       <x>10</x>
       <y>0</y>
-      <width>501</width>
+      <width>770</width>
       <height>161</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>6</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="smallDecimalPoint">
+     <bool>true</bool>
+    </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_11">
+   <widget class="QPushButton" name="div_button">
     <property name="geometry">
      <rect>
       <x>340</x>
       <y>170</y>
-      <width>171</width>
+      <width>261</width>
       <height>91</height>
      </rect>
     </property>
@@ -260,12 +271,12 @@ border-color: rgb(224, 27, 36);</string>
      <string>÷</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_12">
+   <widget class="QPushButton" name="product_button">
     <property name="geometry">
      <rect>
       <x>340</x>
       <y>270</y>
-      <width>171</width>
+      <width>261</width>
       <height>91</height>
      </rect>
     </property>
@@ -281,12 +292,12 @@ border-color: rgb(224, 27, 36);</string>
      <string>x</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_13">
+   <widget class="QPushButton" name="minus_button">
     <property name="geometry">
      <rect>
       <x>340</x>
       <y>370</y>
-      <width>171</width>
+      <width>261</width>
       <height>91</height>
      </rect>
     </property>
@@ -302,12 +313,12 @@ border-color: rgb(224, 27, 36);</string>
      <string>-</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_14">
+   <widget class="QPushButton" name="plus_button">
     <property name="geometry">
      <rect>
       <x>340</x>
       <y>470</y>
-      <width>171</width>
+      <width>261</width>
       <height>91</height>
      </rect>
     </property>
@@ -321,6 +332,27 @@ border-color: rgb(224, 27, 36);</string>
     </property>
     <property name="text">
      <string>+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_Clear">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>170</y>
+      <width>171</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>34</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(246, 245, 244);</string>
+    </property>
+    <property name="text">
+     <string>C</string>
     </property>
    </widget>
   </widget>
