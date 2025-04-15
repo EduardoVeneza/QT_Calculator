@@ -77,7 +77,38 @@ void Calculator_Interface::on_button_0_clicked()
 
 void Calculator_Interface::on_button_Clear_clicked()
 {
+    //Rever bug de crash ao usar set operation e Clear
     logic.setLcdDisplayNumber(0);
     ui->lcdNumber->display(logic.getLcdDisplayNumber());
+}
+
+
+void Calculator_Interface::on_plus_button_clicked()
+{
+    logic.sum();
+}
+
+
+void Calculator_Interface::on_minus_button_clicked()
+{
+    logic.sub();
+}
+
+
+void Calculator_Interface::on_product_button_clicked()
+{
+    logic.mult();
+}
+
+
+void Calculator_Interface::on_div_button_clicked()
+{
+    logic.division();
+}
+
+
+void Calculator_Interface::on_button_equal_clicked()
+{
+    ui->lcdNumber->display(logic.calculate());
 }
 

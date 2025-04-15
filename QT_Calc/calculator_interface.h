@@ -42,6 +42,16 @@ private slots:
 
     void on_button_Clear_clicked();
 
+    void on_plus_button_clicked();
+
+    void on_minus_button_clicked();
+
+    void on_product_button_clicked();
+
+    void on_div_button_clicked();
+
+    void on_button_equal_clicked();
+
 private:
     operations logic;
     Ui::Calculator_Interface *ui;
