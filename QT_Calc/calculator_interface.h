@@ -19,6 +19,7 @@ public:
     ~Calculator_Interface();
 
 private slots:
+    //Lógica dos botões
     void on_button_1_clicked();
 
     void on_button_2_clicked();

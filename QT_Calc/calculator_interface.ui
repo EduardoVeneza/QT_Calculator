@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>785</width>
-    <height>589</height>
+    <width>788</width>
+    <height>588</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -394,7 +394,7 @@ border-color: rgb(224, 27, 36);</string>
       <x>610</x>
       <y>170</y>
       <width>171</width>
-      <height>391</height>
+      <height>191</height>
      </rect>
     </property>
     <property name="font">
@@ -410,6 +410,30 @@ border-color: rgb(224, 27, 36);</string>
     </property>
     <property name="text">
      <string>C</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_equal">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>370</y>
+      <width>171</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>34</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(246, 245, 244);</string>
+    </property>
+    <property name="text">
+     <string>=</string>
     </property>
    </widget>
   </widget>
