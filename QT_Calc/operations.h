@@ -13,8 +13,10 @@ class operations
 private:
     double lcdDisplayedNumber;
     double lastlcdDisplayedNumber;
+    double constantIterator;
     QString operation;
     bool isInOperation;
+    bool isIterating;
 
 public:
     void sum(); //Função deverá retornar o resultado da soma de 2 números
@@ -25,6 +27,10 @@ public:
     void calculate();
 
     void verifyConcat(int n);
+
+    double operateWithIteration(const std::string &operation);
+
+    void clearOperationVariables();
 
     void setLcdDisplayNumber(double n);
     double getLcdDisplayNumber();

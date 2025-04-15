@@ -78,7 +78,7 @@ void Calculator_Interface::on_button_0_clicked()
 void Calculator_Interface::on_button_Clear_clicked()
 {
     //Rever bug de crash ao usar set operation e Clear
-    logic.setLcdDisplayNumber(0);
+    logic.clearOperationVariables();
     ui->lcdNumber->display(logic.getLcdDisplayNumber());
 }
 
