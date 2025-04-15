@@ -109,6 +109,7 @@ void Calculator_Interface::on_div_button_clicked()
 
 void Calculator_Interface::on_button_equal_clicked()
 {
-    ui->lcdNumber->display(logic.calculate());
+    logic.calculate();
+    ui->lcdNumber->display(logic.getLcdDisplayNumber());
 }
 

@@ -22,7 +22,7 @@ public:
     void division(); //Função deverá retornar o resultado da divisão de 2 números
     void mult(); //Função deverá retornar o resultado da multiplicação de 2 números
 
-    double calculate();
+    void calculate();
 
     void verifyConcat(int n);
 

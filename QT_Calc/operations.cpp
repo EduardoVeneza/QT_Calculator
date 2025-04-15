@@ -45,7 +45,7 @@ void operations::mult()
     qDebug() << "Operation set: " << this->operation;
 }
 
-double operations::calculate()
+void operations::calculate()
 {
     double result = 0;
     std::string operationStd = this->operation.toStdString();
@@ -69,7 +69,7 @@ double operations::calculate()
     }
 
     this->lastlcdDisplayedNumber = this->lcdDisplayedNumber;
-    return result;
+    this->lcdDisplayedNumber = result;
 }
 
 void operations::verifyConcat(int n)
