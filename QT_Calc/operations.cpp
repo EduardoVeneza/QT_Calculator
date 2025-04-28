@@ -10,11 +10,13 @@ operations::operations()
     this->constantIterator = 0;
 }
 
+//Simple get
 double operations::getLcdDisplayNumber()
 {
     return this->lcdDisplayedNumber;
 }
 
+//sets the operation to "sum"
 void operations::sum()
 {
 
@@ -24,6 +26,7 @@ void operations::sum()
     qDebug() << "Operation set: " << this->operation;
 }
 
+//sets the operation to "sub"
 void operations::sub()
 {
 
@@ -33,6 +36,7 @@ void operations::sub()
     qDebug() << "Operation set: " << this->operation;
 }
 
+//sets the operation to "division"
 void operations::division()
 {
 
@@ -42,6 +46,7 @@ void operations::division()
     qDebug() << "Operation set: " << this->operation;
 }
 
+//sets the operation to "mult"
 void operations::mult()
 {
 
@@ -51,6 +56,8 @@ void operations::mult()
     qDebug() << "Operation set: " << this->operation;
 }
 
+//calculate the result of (lastDisplyedNumber) "operation that is already set" (current displayed number)
+//and than shows the result in the LCD display
 void operations::calculate()
 {
     //It's used to store the constant iterator ONLY ONCE on the variable.
@@ -75,6 +82,11 @@ void operations::calculate()
     qDebug() << "Constant iterator: " << this->constantIterator;
 }
 
+//This function vertify the concatonation, if the user press 5, then 4, the expected output should be 54.
+//so the function verifies if the current number is 0 or is in operation is true
+//because if the number is 0, so the next digit should be in 0 to 9.
+//and if the user is in operation, than he is going to input the other factor in the operation.
+//else, the algorithm is going to concat the number using simple arithmetics.
 void operations::verifyConcat(int n)
 {
     //If this function is running, the user pressed a number button, so he's not iterating anymore
@@ -164,6 +176,9 @@ void operations::verifyConcat(int n)
     }
 }
 
+//If it's iterating this function is going to operate with it.
+//Instead of using last and current displayed number, the operations are going to be used with the iterator
+//and the last displayed number.
 double operations::operateWithIteration(const std::string &operation)
 {
     if(operation == "sum")
@@ -207,6 +222,7 @@ double operations::operateWithIteration(const std::string &operation)
     }
 }
 
+//Clear everything to start new calculations
 void operations::clearOperationVariables()
 {
     this->isIterating = false;
@@ -221,6 +237,7 @@ void operations::clearOperationVariables()
     qDebug() << "isIterating bool state: " << this->isIterating;
 }
 
+//Simple set
 void operations::setLcdDisplayNumber(double n)
 {
     this->lcdDisplayedNumber = n;
