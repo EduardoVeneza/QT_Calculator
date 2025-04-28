@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QMessageBox>
 #include <QDebug>
+#include <QKeyEvent>
 #include "operations.h"
 
 QT_BEGIN_NAMESPACE
@@ -17,6 +18,10 @@ class Calculator_Interface : public QMainWindow
 public:
     Calculator_Interface(QWidget *parent = nullptr);
     ~Calculator_Interface();
+
+protected:
+    void keyPressEvent(QKeyEvent *event) override;
+
 
 private slots:
     //Lógica dos botões

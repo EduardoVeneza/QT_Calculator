@@ -6,11 +6,20 @@ Calculator_Interface::Calculator_Interface(QWidget *parent)
     , ui(new Ui::Calculator_Interface)
 {
     ui->setupUi(this);
+
+    //Foco para garantir que as teclas sejam identificadas
+    this->setFocusPolicy(Qt::StrongFocus);
+    this->setFocus();
 }
 
 Calculator_Interface::~Calculator_Interface()
 {
     delete ui;
+}
+
+void Calculator_Interface::keyPressEvent(QKeyEvent *event)
+{
+    //Segurar a lógica para receber e interpretar teclas.
 }
 
 void Calculator_Interface::on_button_1_clicked()
@@ -111,5 +120,10 @@ void Calculator_Interface::on_button_equal_clicked()
 {
     logic.calculate();
     ui->lcdNumber->display(logic.getLcdDisplayNumber());
+}
+
+void Calculator_Interface::keyboard_Logic()
+{
+    if()
 }
 
