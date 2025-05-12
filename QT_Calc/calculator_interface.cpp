@@ -122,8 +122,14 @@ void Calculator_Interface::on_button_equal_clicked()
     ui->lcdNumber->display(logic.getLcdDisplayNumber());
 }
 
-void Calculator_Interface::keyboard_Logic()
+//void Calculator_Interface::keyboard_Logic()
+//{
+//    if()
+//}
+
+
+void Calculator_Interface::on_float_button_clicked()
 {
-    if()
+    logic.floatButton();
 }
 

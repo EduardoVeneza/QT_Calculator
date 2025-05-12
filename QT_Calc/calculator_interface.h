@@ -57,6 +57,8 @@ private slots:
 
     void on_button_equal_clicked();
 
+    void on_float_button_clicked();
+
 private:
     operations logic;
     Ui::Calculator_Interface *ui;

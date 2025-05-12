@@ -3,6 +3,7 @@
 
 #include <QObject>
 #include <QWidget>
+#include "floatnumber.h"
 #include <iostream>
 #include <QDebug>
 #include <QString>
@@ -11,14 +12,16 @@
 class operations
 {
 private:
+    FloatNumber fnumber;
+    QString operation;
     double lcdDisplayedNumber;
     double lastlcdDisplayedNumber;
     double constantIterator;
-    QString operation;
     bool isInOperation;
     bool isIterating;
 
 public:
+    //Comentários errados aqui!!
     void sum(); //Função deverá retornar o resultado da soma de 2 números
     void sub(); //Função deverá retornar o resultado da subtração de 2 números
     void division(); //Função deverá retornar o resultado da divisão de 2 números
@@ -34,6 +37,8 @@ public:
 
     void setLcdDisplayNumber(double n);
     double getLcdDisplayNumber();
+
+    void floatButton();
 
     operations(); //Construtor da classe
 };

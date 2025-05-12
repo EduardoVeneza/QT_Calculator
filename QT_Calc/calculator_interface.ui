@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>788</width>
-    <height>588</height>
+    <width>689</width>
+    <height>590</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -268,10 +268,10 @@ border-color: rgb(224, 27, 36);</string>
    <widget class="QLCDNumber" name="lcdNumber">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>10</y>
+      <x>-50</x>
+      <y>0</y>
       <width>1031</width>
-      <height>161</height>
+      <height>171</height>
      </rect>
     </property>
     <property name="font">
@@ -297,7 +297,7 @@ border-color: rgb(224, 27, 36);</string>
      <rect>
       <x>340</x>
       <y>170</y>
-      <width>261</width>
+      <width>161</width>
       <height>91</height>
      </rect>
     </property>
@@ -321,7 +321,7 @@ border-color: rgb(224, 27, 36);</string>
      <rect>
       <x>340</x>
       <y>270</y>
-      <width>261</width>
+      <width>161</width>
       <height>91</height>
      </rect>
     </property>
@@ -345,7 +345,7 @@ border-color: rgb(224, 27, 36);</string>
      <rect>
       <x>340</x>
       <y>370</y>
-      <width>261</width>
+      <width>161</width>
       <height>91</height>
      </rect>
     </property>
@@ -369,7 +369,7 @@ border-color: rgb(224, 27, 36);</string>
      <rect>
       <x>340</x>
       <y>470</y>
-      <width>261</width>
+      <width>161</width>
       <height>91</height>
      </rect>
     </property>
@@ -391,7 +391,7 @@ border-color: rgb(224, 27, 36);</string>
    <widget class="QPushButton" name="button_Clear">
     <property name="geometry">
      <rect>
-      <x>610</x>
+      <x>510</x>
       <y>170</y>
       <width>171</width>
       <height>191</height>
@@ -415,10 +415,10 @@ border-color: rgb(224, 27, 36);</string>
    <widget class="QPushButton" name="button_equal">
     <property name="geometry">
      <rect>
-      <x>610</x>
-      <y>370</y>
+      <x>510</x>
+      <y>470</y>
       <width>171</width>
-      <height>191</height>
+      <height>91</height>
      </rect>
     </property>
     <property name="font">
@@ -434,6 +434,30 @@ border-color: rgb(224, 27, 36);</string>
     </property>
     <property name="text">
      <string>=</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="float_button">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>370</y>
+      <width>171</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>30</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(246, 245, 244);</string>
+    </property>
+    <property name="text">
+     <string>.</string>
     </property>
    </widget>
   </widget>

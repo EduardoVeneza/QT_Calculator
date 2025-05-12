@@ -16,6 +16,11 @@ double operations::getLcdDisplayNumber()
     return this->lcdDisplayedNumber;
 }
 
+void operations::floatButton()
+{
+    qDebug() << "FloatButton pressed";
+}
+
 //sets the operation to "sum"
 void operations::sum()
 {
