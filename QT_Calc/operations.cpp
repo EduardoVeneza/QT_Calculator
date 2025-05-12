@@ -16,19 +16,23 @@ double operations::getLcdDisplayNumber()
     return this->lcdDisplayedNumber;
 }
 
+//Holds the interaction with "fnumber" object
 void operations::floatButton()
 {
     qDebug() << "FloatButton pressed";
+    this->lcdDisplayedNumber = this->lastlcdDisplayedNumber;
+
+
 }
 
 //sets the operation to "sum"
 void operations::sum()
 {
-
     this->operation = "sum";
     this->lastlcdDisplayedNumber = this->lcdDisplayedNumber;
     this->isInOperation = true;
     qDebug() << "Operation set: " << this->operation;
+    fnumber.setCurrentFloatNumber(3.14);
 }
 
 //sets the operation to "sub"
