@@ -20,9 +20,7 @@ double operations::getLcdDisplayNumber()
 void operations::floatButton()
 {
     qDebug() << "FloatButton pressed";
-    this->lcdDisplayedNumber = this->lastlcdDisplayedNumber;
-
-
+//    this->lcdDisplayedNumber = this->lastlcdDisplayedNumber; //?
 }
 
 //sets the operation to "sum"
@@ -32,7 +30,7 @@ void operations::sum()
     this->lastlcdDisplayedNumber = this->lcdDisplayedNumber;
     this->isInOperation = true;
     qDebug() << "Operation set: " << this->operation;
-    fnumber.setCurrentFloatNumber(3.14);
+
 }
 
 //sets the operation to "sub"
@@ -65,6 +63,7 @@ void operations::mult()
     qDebug() << "Operation set: " << this->operation;
 }
 
+
 //calculate the result of (lastDisplyedNumber) "operation that is already set" (current displayed number)
 //and than shows the result in the LCD display
 void operations::calculate()
@@ -96,7 +95,7 @@ void operations::calculate()
 //because if the number is 0, so the next digit should be in 0 to 9.
 //and if the user is in operation, than he is going to input the other factor in the operation.
 //else, the algorithm is going to concat the number using simple arithmetics.
-void operations::verifyConcat(int n)
+void operations::verifyConcat(const int &n)
 {
     //If this function is running, the user pressed a number button, so he's not iterating anymore
     //Then isIterating button is now, false.

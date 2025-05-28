@@ -23,8 +23,8 @@ void FloatNumber::setCurrentFloatNumber(double currentFloatNumber)
     this->currentFloatNumber = currentFloatNumber;
     this->separateParts(); // Separate the decimal and the integer part
 
-    qDebug() << "Integer part (EXPECTED 3): " << this->integerPart;
-    qDebug() << "Decimal part (EXPECTED 0.14)" << this->decimalPart;
+//    qDebug() << "Integer part (EXPECTED 3): " << this->integerPart;
+//    qDebug() << "Decimal part (EXPECTED 0.14)" << this->decimalPart;
 }
 
 double FloatNumber::getDecimalPart()
@@ -39,6 +39,6 @@ double FloatNumber::getIntegerPart()
 
 void FloatNumber::separateParts()
 {
-    this->decimalPart = modf(this->currentFloatNumber, &integerPart);
+    this->decimalPart = modf(this->currentFloatNumber, &integerPart); //Cmath fuction
 }
 

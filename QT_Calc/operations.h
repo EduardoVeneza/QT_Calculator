@@ -29,7 +29,7 @@ public:
 
     void calculate();
 
-    void verifyConcat(int n);
+    void verifyConcat(const int &n);
 
     double operateWithIteration(const std::string &operation);
 
